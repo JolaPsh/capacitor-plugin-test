@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-button (click)="displayNotification({value: 'My notification appears', senderName: 'Joanna'})"> 
+      Display notification
+    </ion-button>
+    <ion-button (click)="printSmthOnScreen({value: 'My message', senderName: 'Joanna'})"> 
+      Print/hide something on screen
+    </ion-button>
+    <div *ngIf="visible">{{message}}</div>
+  </div>
+</ion-content>
